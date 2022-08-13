@@ -1,0 +1,4 @@
+Question 2. 
+--Read the code below, choose the correct answer and explain the reason.
+Answer: c
+因為 message.length = 39

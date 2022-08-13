@@ -1,0 +1,66 @@
+Question 1.
+--Try the statements below in REPL. Please answer that there are correct or not and
+explain the reasons.
+
+a. val id = 9527
+Answer: correct
+
+---------------------------------------------------------
+b. var number : Int = 5.6
+Answer: not correct
+
+> error: the floating-point literal does not conform to the expected type Int
+因為 Int means Integer datatype which ranges from -2,147,483,647 to 2,147,483,647.
+
+修正如下: 
+var number :Double = 5.6 或 var number :FLoat = 5.6F
+
+---------------------------------------------------------
+c. var title = "Hello Kotlin!"
+Answer: correct
+
+---------------------------------------------------------
+d. val content : String = null
+Answer: not correct
+
+> error: null can not be a value of a non-null type String
+
+修正如下: 
+val content : String? = null
+
+---------------------------------------------------------
+e. val number : Double? = 556.6
+Answer: correct
+
+---------------------------------------------------------
+f. var list: List<String>? = listOf(null, null)
+Answer: not correct
+
+> error: type mismatch: inferred type is List<Nothing?> but List<String>? was expected  var list: List<String>? = listOf(null, null)
+
+修正如下: 
+var list: List<String?> = listOf(null, null)
+
+---------------------------------------------------------
+g. var list: List<String?>? = listOf("Wayne", "Chen")
+Answer: correct
+
+---------------------------------------------------------
+h. list.size
+Answer: not completely correct
+
+If var list: List<String> = listOf("Wayne", "Chen") then answer is correct;
+otherwise var list: List<String?>? = listOf("Wayne", "Chen"), the answer is not correct.
+
+> error: only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type List<String?>?
+
+修正如下: 
+list?.size
+
+---------------------------------------------------------
+i. list?.size
+Answer: correct
+
+But have warning if var list: List<String> = listOf("Wayne", "Chen")
+
+> warning: unnecessary safe call on a non-null receiver of type List<String>
