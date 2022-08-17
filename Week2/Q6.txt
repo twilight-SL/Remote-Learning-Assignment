@@ -1,0 +1,2 @@
+6. What’s the maximum value of Int? If you want to represent integers larger than the limit,
+what should you do instead of using int variables?

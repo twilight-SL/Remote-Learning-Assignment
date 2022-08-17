@@ -1,0 +1,1 @@
+4. What’s the difference between ArrayList and LinkedList? Try to explain in Mandarin.

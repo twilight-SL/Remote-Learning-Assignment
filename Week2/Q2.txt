@@ -1,0 +1,2 @@
+2. How to split a string in Android? Explain your understanding, and even better to attach
+some sample code.
