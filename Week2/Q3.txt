@@ -1,2 +1,13 @@
 3. What kind of key-value pair collection do we use in Android? Attach a sample code that
 uses for-loop to print each key-value pair.
+
+Ans. 利用 Map
+
+Sample code:
+fun main(args: Array<String>) {
+    val animalsMap = mapOf(Pair("Hippo",3), Pair("Elephant",8), Pair("Rabbit",12), Pair("lion",7))
+
+    for((key, value ) in animalsMap){
+        println("There are $value $key(s)")
+    }
+}

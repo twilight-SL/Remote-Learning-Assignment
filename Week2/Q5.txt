@@ -1,1 +1,14 @@
 5. What are Value Type variables? List out the Value Type variables you know.
+
+Ans.
+    型態    |      舉例         |
+-------------------------------
+    Char    |      'A'         |
+   String   |     "Hey"        |
+  Booleans  |    true/false    |
+    Byte    |   -128 ~ 127     |
+    Short   |  -32768 ~ 32767  |
+    Int     |  -2^31 ~ 2^31 -1 | (default)
+    Long    |  -2^63 ~ 2^63 -1 |
+   Float    |      123.5F      |
+   Double   |        1.5       | (default)

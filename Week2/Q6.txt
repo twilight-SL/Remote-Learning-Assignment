@@ -1,2 +1,9 @@
 6. What’s the maximum value of Int? If you want to represent integers larger than the limit,
 what should you do instead of using int variables?
+
+Ans. Int Type 具32位元，故其值範圍落在 2^(32-1)-1 ~ -2^(32-1)，即 2147483647 ~ -2147483648
+如若該數值範圍已超過 Int 可容納，需使用 Long Type，其具64位元，故其值範圍落在 2^(64-1)-1 ~ -2^(64-1)
+，即 9,223,372,036,854,775,807 ~ -9,223,372,036,854,775,808 
+
+
+

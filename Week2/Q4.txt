@@ -1,1 +1,48 @@
 4. What’s the difference between ArrayList and LinkedList? Try to explain in Mandarin.
+
+Ans. ArrayList與LinkedList適合應用的情形各有不同，以下是兩者的簡略比較
+
+___________ArrayList_____________________|_________________LinkedList_____________
+     可動態擴增容量，但每超過原先                無須定義初始大小，每新增或刪除資料，
+ ArrayList大小，則需重新建立新的Array           僅需更改pointer即可，故相較ArrayList快
+ List，並將舊值複製至新的ArrayList中          ------------------------------------
+ ----------------------------------         
+  最大容量限制:不能儲存超過2^32的元素             容量限制端看於記憶體配置的大小
+     (因為其index是由int組成)
+ -----------------------------------        -------------------------------------
+ 支援Random Access，即是指定某index，          不支援Random Access，即需Sequential 
+         即可取得該筆資料                     Access，遍歷該串列直至搜尋至該筆資料為止
+ -----------------------------------        -------------------------------------
+      Memory中只需存放資料即可                   Memory中需存放資料以及下一筆資料的指標
+    相較LinkedList消耗較少記憶體                (如若是Double LinkedList，則表示雙向
+                                                ，需再記錄前一個node的Pointer)
+ -----------------------------------        -------------------------------------
+取得元素 get()-Time Complexity:O(1)                 get()-Time Complexity:O(n)
+增加元素 add()-Time Complexity:O(1) or more         add()-Time Complexity:O(1)
+刪除元素 remove()-Time Complexity:O(n)             remove()-Time Complexity:O(1)
+-----------------------------------        -------------------------------------
+
+
+*下方補充並簡述認知中的 Array 與 LinkedList 之差異
+壹、Array
+圖示:     ____ ____ ____ ____ ____ ____ _____
+         |____|____|____|____|____|____|____|
+   
+基本可以視為一個蘿蔔一個坑，一開始初始宣告了多少位置，將配置連續的記憶體空間給該Array
+
+貳、LinkedList
+圖示:       ______     ______     ______     ______     ______     ______
+ Head ---> |__|__|--->|__|__|--->|__|__|--->|__|__|--->|__|__|--->|__|__|
+   
+如上圖所示，LinkedList之間具有指標(pointer)，可方便知曉下一個Node的所在
+
+兩者差異:
+ ______________Array____________|____________________LinkedList__________________
+      占用Memory連續空間                      各Node不一定占用連續空間
+   Array中個元素型態一定相同                   各Node之type不一定相同
+    支援Random Access                無法支援Random Access，只支援Sequential Access
+  Sequential Access速度快              速度慢(因需遍歷link，才知下一個Node所在)
+        可靠度較高                   可靠度較低(link斷了，串列將一分為二，可能遺失資料)
+     刪除及插入元素不方便                          刪除及插入元素方便
+  (需挪動其他元素，Time=O(n))                 (更改pointer即可，Time=O(1))  
+      空間無法動態擴充                                 可動態擴充          

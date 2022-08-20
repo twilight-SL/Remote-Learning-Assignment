@@ -1,1 +1,15 @@
 1. What is Inheritance? Try to explain in Mandarin.
+
+Ans. 繼承(Inheritance)，即後代子嗣們具有父輩(parents)的某種特徵或性質，換句話說，父輩遺傳某特徵給後代子嗣，在生理學上指的是基因傳承。
+以同樣概念推廣至程式設計中，可將一群屬性或行為類似的物件(object)，提出群組中共同具有的屬性或行為，作為該群組中的parent。
+
+以下將以 Animal作為舉例:
+                  __________________________________________________________
+class Animal  -  |Parents                                                   |                                                  
+    |            |設其屬性Attributes有: 棲地(habitat)、食性(Feeding Habit)、  | 
+    |            |學名(scientific name)                                     |
+    |            |設其方法Method有: 飢餓程度(hunger)、叫聲(barking)           |
+    |            |__________________________________________________________|
+    |
+class Wolf、 class Hippo 、class Lion、class Lynx...等等，前述這些物件都具有Animal class中的屬性以及方法，因此可利用Inheritance from
+class Animal，避免在每一個物件中重複設定相同的屬性以及方法，繼承後依然可針對特殊情形覆寫該屬性。

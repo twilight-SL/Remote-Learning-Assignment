@@ -1,2 +1,15 @@
 2. How to split a string in Android? Explain your understanding, and even better to attach
 some sample code.
+
+Ans.
+壹、利用substring拆取特定字元或字串
+Code:
+    var text1 = "Hello World~"
+    println(text1.substring(6)) // 印出 World~
+    println(text1.substring(0..4))  // 印出 Hello
+
+貳、利用split以及參數(分隔符號)
+Code:
+    var text2 = "Hello World! I am the newbie of Kotlin and Android."
+    var split = text2.split(" ")
+    println(split)  // 印出 [Hello, World!, I, am, the, newbie, of, Kotlin, and, Android.]
