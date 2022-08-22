@@ -1,0 +1,2 @@
+4. What are the differences between LinearLayout and RelativeLayout? Try to explain in
+detail.

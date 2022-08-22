@@ -1,0 +1,1 @@
+1. What is Encapsulation? Try to list out the benefits of Encapsulation.

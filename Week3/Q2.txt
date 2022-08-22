@@ -1,0 +1,1 @@
+2. Try to explain what enum is and why we use them.

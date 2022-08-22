@@ -1,0 +1,1 @@
+3. How to use enum in Kotlin? Attach a sample code that uses enum in Kotlin.
