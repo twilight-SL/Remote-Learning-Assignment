@@ -1,7 +1,7 @@
 4. What are the differences between LinearLayout and RelativeLayout? Try to explain in
 detail.
 
-Ans.
+Ans. 檔案中附有 LinearLayout 與 RelativeLayout 簡略呈現圖，供參考
 
 _______________________LinearLayout_____________________|____________________RelativeLayout_________________________
   將其子項目以水平或垂直方向排列(vertical/horizontal)，         可指定相對於某對象的排列位置，如:child A在child B之左側
