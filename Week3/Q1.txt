@@ -1,1 +1,12 @@
 1. What is Encapsulation? Try to list out the benefits of Encapsulation.
+
+Ans. Encapsulation 意指封裝，因外界無法得知該物件內部情形，故外界只能使用物件所
+提供存取的函式，如同使用一個具有操作版面的機械手臂，提供外界存取的函式對應操作版面，
+而外界進行使用時，並不會也不能更改內部配置與設定。
+
+Benefits:
+1. Protects an object from unwanted access
+2. Reduces human-based errors
+3. Simplifies the maintenance of the application; in other words, this is easier to debug.
+4. Makes the code easier to read and understand
+
