@@ -1,6 +1,6 @@
 3. How to use enum in Kotlin? Attach a sample code that uses enum in Kotlin.
 
-Ans. enum 不僅可作為常量的集合，亦可做為類別的屬性(Attribute)、介面(Interface)實施...等。
+Ans. enum 不僅可作為常量集合的類別，亦可做為類別的屬性(Attribute)、介面(Interface)實施...等。
 
 sample code:
 enum class CurrencyType(val AbbreviateName: String, val simpleExRate: Double){
