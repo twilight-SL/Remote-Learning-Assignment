@@ -1,1 +1,24 @@
 5. Try to explain the benefits of ConstraintLayout. Why should you use it?
+
+Ans.
+benefits
+1. 相較於LinearLayout或RelativeLayout，ConstraintLayout可以使用更具效能的繪製視圖，
+   因繪圖視圖過程中須對View Tree由上到下遍歷，因此若有更多視圖層級，繪製視圖會花費更多計算
+   能力以及時間。
+   如:RelativeLayout
+            ------RelativeLayout------LinearLayout------RelativeLayout
+              |--...              |--LinearLayout    |--...
+              |--...              |--...
+                  
+   而ConstraintLayout則是致力於將視圖保持平面層次，以利繪製過程中所需的訪問。
+
+2. ConstraintLayout中具有BaseLine功能，可利用其實現對齊功能，若要在RelativeLayout中實現，
+   則會稍加複雜。
+   
+3. ConstraintLayout中具有許多useful components，例:Aspect Ratio、Chains......，相比
+   RelativeLayout更加靈活，可以利用平面層次做出複雜的layout
+
+
+
+參考文件:(內有效能詳細比較圖)
+https://android-developers.googleblog.com/2017/08/understanding-performance-benefits-of.html
