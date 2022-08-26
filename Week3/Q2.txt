@@ -1,1 +1,8 @@
 2. Try to explain what enum is and why we use them.
+
+Ans. enumeration 意指列舉，即是列出該物件裡具有特定之固定的屬性，
+例: 以「星期」而言，僅固定具有星期一、星期二、星期三、星期四、星期
+五、星期六、星期日此七種。
+     在code中利用enumeration，可讓程式更具可讀性，也較不易因人為
+錯誤致使程式crash。
+
